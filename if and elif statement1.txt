@@ -1,0 +1,33 @@
+# '''
+# You decide you want to play a game where you are hiding 
+# a number from someone.  Store this number in a variable 
+# called 'answer'.  Another user provides a number called
+# 'guess'.  By comparing guess to answer, you inform the user
+# if their guess is too high or too low.
+
+# Fill in the conditionals below to inform the user about how
+# their guess compares to the answer.
+# '''
+
+answer = 12
+guess = 25
+
+#first statement checks if the answer # is greater than guess #
+#if true, will return matching result. If false, will go to 2nd statement
+
+if answer > guess:
+    result = "Oops!  Your guess was too low."
+
+#second statement checks if answer # is less than guess #
+#if true, will return matching result. If false, will go to 3rd statement
+
+elif answer < guess:
+    result = "Oops!  Your guess was too high."
+
+#third statement is checking if answer # is same as guess #
+#If we've made it this far, then this final one has to be true and result returned
+
+elif answer == guess:
+    result = "Nice!  Your guess matched the answer!"
+
+print(result)
