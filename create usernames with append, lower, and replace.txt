@@ -1,0 +1,19 @@
+Create Usernames
+
+Write a for loop that iterates over the names list to create a usernames list. To create a username for each name, make everything lowercase and replace spaces with underscores.
+
+Solution: 
+
+names = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
+usernames = []
+
+# write your for loop here
+
+for name in names:  
+    usernames.append(name.lower().replace(" ", "_"))
+
+#line one = for each name in the names list
+#line two = items in () will be done first so-->
+#line two = change to lowercase, replace space with underscore, then add each new item to usernames
+
+print(usernames)
