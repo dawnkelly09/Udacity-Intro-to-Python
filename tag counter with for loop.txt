@@ -1,0 +1,21 @@
+Quiz: Tag Counter
+Write a for loop that iterates over a list of strings, tokens, and counts how many of them are XML tags. XML is a data language similar to HTML. You can tell if a string is an XML tag if it begins with a left angle bracket "<" and ends with a right angle bracket ">". Keep track of the number of tags using the variable count.
+
+You can assume that the list of strings will not contain empty strings.
+
+Solution:
+
+tokens = ['<greeting>', 'Hello World!', '</greeting>']
+count = 0
+
+count = 0
+
+#line 1 = for each token in list "tokens"
+#line 2 = if the first character of token = < and last character = >
+#line 3 = add one to "count"
+
+for token in tokens:
+    if token[0] == '<' and token[-1] == '>':
+        count += 1
+
+print(count)
