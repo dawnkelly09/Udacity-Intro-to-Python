@@ -1,0 +1,20 @@
+Create an HTML List
+
+Write some code, including a for loop, that iterates over a list of strings and creates a single string, html_str, which is an HTML list. The string's first line should be the opening tag <ul>. Following that is one line per element in the source list, surrounded by <li> and </li> tags. The final line of the string should be the closing tag </ul>.
+
+Solution:
+
+items = ['first string', 'second string']
+html_str = "<ul>\n"  # "\ n" is the character that marks the end of the line
+                     # the characters that are after it in html_str are on the next line
+
+#Line 1 = for each item in list items
+#Line 2 = html_str (which is the <ul> and new line) plus <li>item</li> with a \n line break
+#This line 2 adds each list item (with its <li> tags) and line break to html_str
+#Line 3 adds the closing </ul>
+
+for item in items:
+    html_str += "<li>{}</li>\n".format(item)
+html_str += "</ul>"
+
+print(html_str)
