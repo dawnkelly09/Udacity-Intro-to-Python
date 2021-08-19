@@ -1,0 +1,21 @@
+Write a while loop that finds the largest square number less than an integerlimit and stores it in a variable nearest_square. A square number is the product of an integer multiplied by itself, for example 36 is a square number because it equals 6*6.
+
+For example, if limit is 40, your code should set the nearest_square to 36.
+
+
+limit = 40
+start = 0
+
+#Line 1: while (start + 1) squared is less than limit, run loop
+#Line 2: add one to start on each iteration
+#Once (start +1) squared is >= limit, nearest square is the last start number squared
+
+while (start+1)**2 < limit:
+    start += 1
+nearest_square = start**2
+
+print(nearest_square)
+
+
+
+
