@@ -1,0 +1,24 @@
+Quiz: Zip Coordinates
+Use zip to write a for loop that creates a string specifying the label and coordinates of each point and appends it to the list points. Each string should be formatted as label: x, y, z. For example, the string for the first coordinate should be F: 23, 677, 4.
+
+Solution:
+
+x_coord = [23, 53, 2, -12, 95, 103, 14, -5]
+y_coord = [677, 233, 405, 433, 905, 376, 432, 445]
+z_coord = [4, 16, -6, -42, 3, -6, 23, -1]
+labels = ["F", "J", "A", "Q", "Y", "B", "W", "X"]
+
+#create new blank list called points
+
+points = []
+
+#line 1: for each point, zip info into tuples in this order
+#line 2: unzip point tuple and append to points list per format indicated
+
+for point in zip(labels, x_coord, y_coord, z_coord):
+    points.append("{}: {}, {}, {}".format(*point))
+
+#for each point in the point list, print the point
+
+for point in points:
+    print(point)
