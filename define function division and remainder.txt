@@ -1,0 +1,25 @@
+Quiz: readable_timedelta
+Write a function named readable_timedelta. The function should take one argument, an integer days, and return a string that says how many weeks and days that is. For example, calling the function and printing the result like this:
+
+print(readable_timedelta(10))
+should output the following:
+
+1 week(s) and 3 day(s).
+
+Solution:
+
+#Line 1: define the function name (readable_timedelta) and argument (days)
+#Line 2: calculate weeks--use // to find how many times days divides by 7 (rounded down to whole #)
+#Line 3: calculate remainder--use % to find remainder of days divided by 7 
+#Line 4: use format method to create the written response when function is run
+
+def readable_timedelta(days):
+    weeks = days // 7
+    remainder = days % 7
+    return "{} week(s) and {} day(s).".format(weeks, remainder)
+
+
+print(readable_timedelta(10))
+
+1 week(s) and 3 day(s).
+
